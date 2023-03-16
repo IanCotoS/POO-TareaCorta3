@@ -2,7 +2,8 @@ import java.util.Arrays;
 
 public class Geometria{
     public static void main (String args[]){
-    
+        
+        // Se realizan las pruebas
         Figura[] rects = new Figura[6];
         
         rects[0] = new Rectangulo(2.5, 3.0);
