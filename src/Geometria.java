@@ -13,16 +13,16 @@ public class Geometria{
         rects[5] = new Rectangulo(4, 2);
 
         System.out.println("Sin ordenar:");
-        for (int i = 0; i < 6; i++){
-            System.out.print(Integer.toString(i) + ". " + rects[i].getClass().getName());
-            System.out.println("\tÁrea: " + Double.toString(rects[i].calcularArea()));
+        for (int pos = 0; pos < 6; pos++){ // Imprime el array sin ordenar 
+            System.out.print(Integer.toString(pos) + ". " + rects[pos].getClass().getName()); // posicion. Clase
+            System.out.println("\tÁrea: " + Double.toString(rects[pos].calcularArea()));
         }
 
         Arrays.sort(rects);
         System.out.println("\nOrdenados:");
-        for (int i = 0; i < 6; i++){
-            System.out.print(Integer.toString(i) + ". " + rects[i].getClass().getName());
-            System.out.println("\tÁrea: " + Double.toString(rects[i].calcularArea()));
+        for (int pos = 0; pos < 6; pos++){ // Imprime el array ya ordenado
+            System.out.print(Integer.toString(pos) + ". " + rects[pos].getClass().getName()); // posicion. Clase
+            System.out.println("\tÁrea: " + Double.toString(rects[pos].calcularArea()));
         }
     }
 }
